@@ -781,7 +781,7 @@ AS SELECT
    `ltcvn`.`testcase_id` AS `testcase_id`,
    `ltcvn`.`version` AS `version`,
    `TCV`.`id` AS `tcversion_id`
-FROM ((/*prefix*/latest_tcase_version_number LTCVN 
+FROM ((/*prefix*/latest_tcase_version_number ltcvn 
        join /*prefix*/nodes_hierarchy NHTCV 
        on ((`NHTCV`.`parent_id` = `ltcvn`.`testcase_id`))) 
        join /*prefix*/tcversions `TCV` 
