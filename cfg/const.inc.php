@@ -367,7 +367,7 @@ $att_model_m2->show_upload_column = true;
 $tlCfg->results['status_code'] = array('failed' => 'f','blocked' => 'b',
                                        'passed' => 'p','not_run' => 'n',
                                        'not_available' => 'x','unknown' => 'u',
-                                       'all' => 'a'); 
+                                       'all' => 'a','not_applicable' => 'z' ); 
 
 
 /** 
@@ -389,7 +389,8 @@ $tlCfg->results['status_label'] = array('not_run' => 'test_status_not_run',
                                         'blocked'=> 'test_status_blocked',
                                         'all' => 'test_status_all_status',
                                         'not_available' => 'test_status_not_available',
-                                        'unknown' => 'test_status_unknown');
+                                        'unknown' => 'test_status_unknown',
+					'not_applicable' => 'test_status_not_applicable');
 
 // Is RIGHT to have this configuration DIFFERENT from $tlCfg->results['status_label'],
 // because you must choose to not allow some of previous status be available
@@ -411,7 +412,8 @@ $tlCfg->results['status_label'] = array('not_run' => 'test_status_not_run',
 $tlCfg->results['status_label_for_exec_ui'] = array('not_run' => 'test_status_not_run',
                                                     'passed'  => 'test_status_passed',
                                                     'failed'  => 'test_status_failed',
-                                                    'blocked' => 'test_status_blocked');
+                                                    'blocked' => 'test_status_blocked',
+						    'not_applicable' => 'test_status_not_applicable');
 
 
 $tlCfg->results['status_icons_for_exec_ui'] = 
@@ -420,7 +422,9 @@ $tlCfg->results['status_icons_for_exec_ui'] =
         'failed' => array('img' => 'test_status_failed',
                           'title' => 'click_failed'),
         'blocked' => array('img' => 'test_status_blocked',
-                           'title' => 'click_blocked'));
+                           'title' => 'click_blocked'),
+	'not_applicable' => array('img' => 'test_status_not_applicable',
+			   'title' => 'click_not_applicable'));
 
 $tlCfg->results['status_icons_for_exec_next_ui'] = 
   array('passed' => array('img' => 'test_status_passed_next',
@@ -428,7 +432,9 @@ $tlCfg->results['status_icons_for_exec_next_ui'] =
         'failed' => array('img' => 'test_status_failed_next',
                           'title' => 'click_failed_next'),
         'blocked' => array('img' => 'test_status_blocked_next',
-                           'title' => 'click_blocked_next'));
+                           'title' => 'click_blocked_next'),
+	'not_applicable' => array('img' => 'test_status_not_applicable_next',
+			    'title' => 'click_not_applicable_next'));
 
 
 $tlCfg->results['execStatusToExclude'] = array();
@@ -450,7 +456,8 @@ $tlCfg->results['default_status'] = 'not_run';
  * Colours should be compiant with definition in CSS 
  **/
 $tlCfg->results['charts']['status_colour'] = array('not_run' => '000000','passed'  => '006400',
-                                                   'failed'  => 'B22222','blocked' => '00008B');
+                                                   'failed'  => 'B22222','blocked' => '00008B',
+						   'not_applicable' => '808000');
 
 /*
  * arrays for new filter types (BUGID 2455, BUGID 3026)
