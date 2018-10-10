@@ -872,11 +872,11 @@ CREATE TABLE /*prefix*/testproject_codetracker (
 --
 --
 --
-CREATE TABLE /*prefix*/testproject_codetracker (
-  testproject_id int(10) unsigned NOT NULL,
-  codetracker_id int(10) unsigned NOT NULL,
-  PRIMARY KEY (testproject_id)
-);
+---CREATE TABLE /*prefix*/testproject_codetracker (
+---  testproject_id int(10) unsigned NOT NULL,
+---  codetracker_id int(10) unsigned NOT NULL,
+---  PRIMARY KEY (testproject_id)
+---);
 
 
 
