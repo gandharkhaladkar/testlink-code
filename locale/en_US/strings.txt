@@ -379,6 +379,7 @@ $TLS_tcase_relation_help = "(if you are linking to a test on same test project, 
 $TLS_quick_passed = "Click to set to passed";
 $TLS_quick_failed = "Click to set to failed";
 $TLS_quick_blocked = "Click to set to blocked";
+$TLS_quick_not_applicable = "Click to set to not_applicable";
 
 $TLS_onchange_save = "Value will be automatically saved when changed";
 $TLS_CSRF_attack = "Cross-Site Request Forgery attack!";
@@ -3750,6 +3751,8 @@ $TLS_click_blocked = "Click to set to blocked";
 $TLS_click_passed_next = "Click to set to passed and move to next";
 $TLS_click_failed_next = "Click to set to failed and move to next";
 $TLS_click_blocked_next = "Click to set to blocked and move to next";
+$TLS_click_not_applicable_next = "Click to set to not_applicable and move to next";
+
 
 $TLS_send_spreadsheet_by_email = 'Send Spreadsheet by email to myself';
 $TLS_send_by_email_to_me = 'Send by email to myself';

@@ -102,6 +102,14 @@ switch($args->light)
       break;
 
 
+
+      case 'results_flat';
+        $param = "&tproject_id={$args->tproject_id}&tplan_id={$args->tplan_id}" .
+                 "&format={$args->format}";
+        $what2launch = $cfg['url'] ."?apikey=$args->apikey{$param}";
+      break;
+
+
       case 'results_by_tester_per_build';
         $param = "&tproject_id={$args->tproject_id}&tplan_id={$args->tplan_id}&format=" . FORMAT_HTML;
         $what2launch = $cfg['url'] ."?apikey=$args->apikey{$param}";
