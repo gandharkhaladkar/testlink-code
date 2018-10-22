@@ -3746,10 +3746,14 @@ $TLS_issueTracker_connection_ko = 'Test Connection KO';
 $TLS_click_passed = "Click to set to passed";
 $TLS_click_failed = "Click to set to failed";
 $TLS_click_blocked = "Click to set to blocked";
+$TLS_click_not_applicable = "Click to set to not_applicable";
+
 
 $TLS_click_passed_next = "Click to set to passed and move to next";
 $TLS_click_failed_next = "Click to set to failed and move to next";
 $TLS_click_blocked_next = "Click to set to blocked and move to next";
+$TLS_click_not_applicable_next = "Click to set to not_applicable and move to next";
+
 
 $TLS_send_spreadsheet_by_email = 'Send Spreadsheet by email to myself';
 $TLS_send_by_email_to_me = 'Send by email to myself';
