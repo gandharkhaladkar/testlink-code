@@ -234,7 +234,7 @@ define('MENU_ITEM_CLOSE', '</div><br />');
 $g_field_size = new stdClass();
 $g_field_size->node_name = 100;
 $g_field_size->testsuite_name = 100;
-$g_field_size->testcase_name = 100;
+$g_field_size->testcase_name = 250;
 $g_field_size->testproject_name = 100;
 
 // requirements and req_spec tables field sizes
